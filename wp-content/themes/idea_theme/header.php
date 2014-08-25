@@ -13,13 +13,13 @@
 <head>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title><?php wp_title( '|', true, 'right' ); ?></title>
 
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
     <?php wp_head(); ?>
 </head>
 
@@ -38,7 +38,7 @@
   <!-- </a> -->
   <?php // endif; // End header image check. ?>
 
-      <img src="http://localhost:8888/idea/wp-content/uploads/2014/Static Imagery/IDEA_logo_full.png" width="250px" height="150px">
+      <img src="<?php bloginfo('template_directory'); ?>/images/logos/IDEA_logo_full.png" width="250px" height="150px">
 
         <button class="menu-toggle"><?php _e( 'Primary Menu', 'scout-base' ); ?></button>
         <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>

@@ -166,6 +166,13 @@ a img {
 	font-weight: bold;  
 }
 
+@font-face {
+	font-family: HelveticaNeueLTStd-Roman;  
+	src: local('HelveticaNeueLTStd-Roman'), 
+		url("fonts/HelveticaNeueLTStd-Roman.otf") format('opentype');  
+	font-weight: normal;  
+}
+
 body,
 button,
 input,
@@ -752,6 +759,8 @@ INDEX
 		3.3.1 - Venture Profile (single-venture)
 	3.4 - Partners
 	3.5 - Contact Us
+	3.6 - Openings
+	3.7 - News Page
 4.0 - GENERIC STYLING
 
 
@@ -772,16 +781,15 @@ margin-bottom: 0px !important;
 .text-banner{
 	width: 100%;
 	background-color: #144159;
-	height: 6em;
+	height: 100%;
 	font-family: HelveticaNeueLTStd-UltLt;
 	font-size: 2em;
 	color: white;
 
 }
-
-.text-banner .row{
-	padding-top: 2em;
-	padding-bottom: 2em;
+.text-banner{
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 
@@ -990,6 +998,10 @@ padding: 10px;
 /* Slug: about */
 
 
+.container.about-idea-page {
+	padding-left:0px;
+}
+
 .about-cta{
 	color: white;
 	padding-top: 5em;
@@ -997,11 +1009,28 @@ padding: 10px;
 }
 
 #about-cta h2{
-	color: #E77924;
+	color: white;
+	font-weight:100;
+}
+
+#about-cta p{
+	color: white;
+	font-weight:100 !important;
+	font-size:19px;
+	line-height:24px;
+}
+
+#about-cta .btn {
+	margin-top:10px;
 }
 
 .about-idea-page p{
-	font-size: .5em;
+	font-size: 19px;
+	line-height:24px;
+}
+
+.about-idea-page h2 {
+	margin-top:0px;
 }
 
 .about-idea-page .row{
@@ -1055,58 +1084,6 @@ padding: 10px;
 
 
 
-figure {
-  margin: 20px;
-  display: block;
-  position: relative;
-  float: left;
-  overflow: hidden;
-}
-figcaption {
-  border-top: solid #439FC1;
-  position: absolute;
-  background: black;
-  background: rgba(0,0,0,0.75);
-  color: white;
-  padding: 10px 20px;
-  opacity: 0;
-  width: 100%;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition:    all 0.6s ease;
-  -o-transition:      all 0.6s ease;
-}
-figure:hover figcaption {
-  opacity: 1;
-}
-figure:before {
-  
-	content: "?";
-  position: absolute;
-  font-weight: 800;
-  background: black;
-  background: rgba(255,255,255,0.75);
-  text-shadow: 0 0 5px white;
-  color: black;
-  width: 24px;
-  height: 24px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius:    12px;
-  border-radius:         12px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 24px;
-  -moz-transition: all 0.6s ease;
-  opacity: 0.75;
- 
-}
-
-figure:hover:before {
-  opacity: 0;
-}
-
-.cap-bot:before { bottom: 10px; left: 10px; }
-.cap-bot figcaption { left: 0; bottom: -30%;}
-.cap-bot:hover figcaption { bottom: 0; }
 
 /*
 #team-name-thumbnail{
@@ -1234,7 +1211,9 @@ padding-bottom: 5px;
 	background-color: #E77924;
 	width: 75px;
 	padding: 5px;
+	text-transform: uppercase;
 }
+
 
 
 
@@ -1257,18 +1236,24 @@ These pages have the exact same structure so I just used the same styling for bo
 
 }
 
+.vr-page .lead {
+	color:white;
+}
+
 .vr-page .row{
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
 
-
-#vr-sidebar{
-padding-top: 35px;
+.vr-page .top.row{
+	padding-top: 40px;
+	padding-bottom: 15px;
 }
 
-#vr-sidebar h6{
-
+#vr-sidebar{
+padding-top: 30px;
+margin-top:35px;
+border-top:1px solid #717375;
 }
 
 #vr-sidebar ul{
@@ -1278,13 +1263,26 @@ padding-top: 35px;
 }
 
 #vr-sidebar ul li a{
-	color: #439FC1;
-	padding-left: 10px;
+	color: #9C9D9C;
+	font-weight:200;
+	font-size:15px;
+	line-height:30px;
 }
 
 #vr-sidebar ul li a:hover{
-	border-left: solid #E77924;
+	color:#F47632;
 	text-decoration: none;
+}
+
+#vr-sidebar ul li a:active, #vr-sidebar ul li a.active{
+	color:#F47632;
+	text-decoration: none;
+}
+
+#vr-sidebar ul li .active > a,
+#vr-sidebar ul li .active:hover > a,
+#vr-sidebar ul li .active:focus > a {
+  color: #F47632;
 }
 
 .vr-category{
@@ -1314,7 +1312,7 @@ padding-top: 35px;
 }
 
 #vr-arrow{
-	border-top: 50px solid #231F20;
+	border-top: 50px solid #144159;
 }
 
 .section-arrow{
@@ -1334,9 +1332,71 @@ padding-top: 35px;
 3.2.2 GET INVOLVED
 --------------------------------------------------------------*/
 
+.body {
+  position: relative;
+}
+.affix {
+  position: fixed;
+  top: 60px;  /*height of the nav */
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+.affix {position: static;} 
+}
+
+.affix-bottom {
+  width: inherit;
+  position: absolute;
+  top: auto;
+  bottom: 185px;  //height of the footer
+}
+
+#get-in-sidebar{
+padding-top: 30px;
+margin-top:35px;
+border-top:1px solid #717375;
+}
+
+#get-in-sidebar ul{
+	list-style-type: none;
+	margin: 0px;
+
+}
+
+#get-in-sidebar ul li a{
+	color: #9C9D9C;
+	font-weight:200;
+	font-size:15px;
+	line-height:30px;
+}
+
+#get-in-sidebar ul li a:hover{
+	color:#F47632;
+	text-decoration: none;
+}
+
+#get-in-sidebar ul li a:active, #get-in-sidebar ul li a.active{
+	color:#F47632;
+	text-decoration: none;
+}
+
+.get-in-h2 {
+	font-size:28px;
+	font-weight:100;
+	margin-bottom:10px;
+}
+
+.get-in-p {
+	font-size:15px;
+	font-weight:200;
+	color:#9C9D9C;
+}
 
 .get-in-btn{
-	background-color:#E77924;
+	background-color:#088BB3;
 	box-shadow: none;
 	color: white;
 	text-shadow: none;
@@ -1349,9 +1409,9 @@ padding-top: 35px;
 }
 
 .get-in-btn:hover{
-	background-color:#E77924;
+	background-color:#85B9C1;
 	box-shadow: none;
-	color: white;
+	color: white !important;
 	text-shadow: none;
 }
 
@@ -1361,6 +1421,7 @@ padding-top: 35px;
   top: -75px; 
   visibility: hidden;
 }
+
 
 /*--------------------------------------------------------------
 3.3 VENTURES
@@ -1611,7 +1672,7 @@ color: #93C4CC;
 }
 
 /*--------------------------------------------------------------
-3.5 Team Position Openings
+3.6 Team Position Openings
 --------------------------------------------------------------*/
 /* Slug: openings */
 
@@ -1653,32 +1714,82 @@ color: #93C4CC;
 
 
 /*--------------------------------------------------------------
-3.5 Team Position Openings
+3.7 News
 --------------------------------------------------------------*/
 /* Slug = news 
 
 Featured post slug = featured */
 
+
 #read-more{
 	font-weight: bold;
 	font-size: 14pt;
+	color: white;
 }
 
-#news-banner{
+#read-more:hover{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14pt;
+	color: white;
+}
+
+.news-banner{
 	background-color: #93C4CC;
+	font-size: 300%;
+	background-image: url("images/patterns/liteblue-pw_pattern_@2X.png");
+    background-repeat: repeat-x;
 }
 
+/*	background-image: url("http://localhost:8888/idea/wp-content/uploads/2014/Static Imagery/Patterns/liteblue-pw_pattern_@2X.png");
+*/
+
+/*The news-post section on the news page */
 .news-posts{
 	padding-bottom: 40px;
 	padding-top: 40px;
 }
 
+#news-sidebar{
+	padding-right: 20px;
+}
+
+#news-sidebar hr{
+		margin-top: 0px;
+		height: 1.5px;
+		background-color: rgba(120, 120, 120, 1);
+}
+
+#news-categories{
+	padding-bottom: 20px
+}
+
+#news-sidebar ul li{
+	list-style: none;
+}
+
+#news-sidebar ul{
+	margin-left: 0px;
+}
+
+#news-tags{
+	padding-bottom: 20px;
+}
+
+#news-search{
+	padding-bottom: 20px;
+
+}
 
 .featured-post{
 	background-color: #144159;
 	padding-top: 40px;
 	padding-bottom: 40px;
 	color: white;
+}
+
+.featured-post .row{
+	padding-bottom: 40px;
 }
 
 .featured-post p{
@@ -1689,12 +1800,21 @@ Featured post slug = featured */
 	padding-top: 10px;
 }
 
-.featured-title h1, h3, h5{
+.featured-title h5{
+	font-family: HelveticaNeueLTStd-Bd;
+	font-weight: bold; 
+	text-align: center;
+	font-size: 14pt;
+}
+
+.featured-title h1, h3{
 	font-family: HelveticaNeueLTStd-Bd;
 	font-weight: bold; 
 	text-align: center;
 	font-size: 4em; 
 }
+
+
 
 .featured-title h1 a{
 	text-decoration: none !important;
@@ -1712,6 +1832,82 @@ Featured post slug = featured */
 
 .featured-img{
 	padding-left: 30px !important;
+}
+
+#featured-tags a:visited{
+	text-decoration: none;
+	color:#428BCA;
+}
+
+#featured-tags a:hover{
+	text-decoration: none;
+}
+
+#featured-bg-img{
+	background-color:  #144159;
+	opacity: .3;
+	position: relative;
+	margin-top: -20px;
+	height: inherit;
+}
+#featured-bg-img img{
+	width: 100%;
+	position: absolute;
+}
+
+/*--------------------------------------------------------------
+3.7.1 Single News Post
+--------------------------------------------------------------*/
+
+.news-post{
+	padding-bottom: 40px;
+}
+
+#post-title{
+	color: #428BCA;
+	text-transform: uppercase;
+}
+
+#post-title a{
+	color: #428BCA;
+	text-decoration:none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition:    all 0.5s ease;
+  -o-transition:      all 0.5s ease;
+}
+
+
+#post-title a:hover{
+	color: #93C4CC;
+	text-decoration: none;
+}
+
+
+#post-author{
+	color: rgba(120, 120, 120, 1);
+	font-size: 14pt;
+	padding-bottom: 10px;
+}
+
+#post-content{
+	font-family: HelveticaNeueLTStd-Roman;
+	font-size: 14pt;
+	font-weight: normal;
+}
+
+#post-date{
+	padding-bottom: 10px;
+	font-weight: normal;
+}
+
+#post-img{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#post-tags a, a:hover{
+	color: #428BCA;
+	text-decoration: none;
 }
 
 /*--------------------------------------------------------------
@@ -1733,6 +1929,58 @@ Featured post slug = featured */
 
 
 
+figure {
+  margin: 20px;
+  display: block;
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+figcaption {
+  border-top: solid #439FC1;
+  position: absolute;
+  background: black;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  padding: 10px 20px;
+  opacity: 0;
+  width: 100%;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition:    all 0.6s ease;
+  -o-transition:      all 0.6s ease;
+}
+figure:hover figcaption {
+  opacity: 1;
+}
+figure:before {
+  
+	content: "?";
+  position: absolute;
+  font-weight: 800;
+  background: black;
+  background: rgba(255,255,255,0.75);
+  text-shadow: 0 0 5px white;
+  color: black;
+  width: 24px;
+  height: 24px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius:    12px;
+  border-radius:         12px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  -moz-transition: all 0.6s ease;
+  opacity: 0.75;
+ 
+}
+
+figure:hover:before {
+  opacity: 0;
+}
+
+.cap-bot:before { bottom: 10px; left: 10px; }
+.cap-bot figcaption { left: 0; bottom: -30%;}
+.cap-bot:hover figcaption { bottom: 0; }
 
 /*--------------------------------------------------------------
 0.0 UTILITY CLASSES
@@ -1800,7 +2048,7 @@ background-color: #231F20;
 }
 
 .medium-gray{
-background-color: #3D3C3B;
+background-color: rgba(120, 120, 120, 1);
 }
 
 .light-gray{

@@ -39,8 +39,8 @@ get_header(); ?>
 				<div class="row">
 					<div id="text-container-bg"></div>
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-						<h2>ABOUT IDEA</h2>
-						<p>Lorem ipsum dolor sit a eleifend. Curabitur sollicitudin lorem at tristique consequat. gula at est gravida dapibus at ut risus. Sed libero ante, sagittis sed leo non, ornare porta odio. Duis luctus ut nulla at ultricies. Phasellus vestibulum, augue facilisis tincidunt gravida, nunc augue tristique leo, vitae ultrices urna est tristique mauris. </p>
+						<h1>About IDEA</h1>
+						<p>Short statement that sums up IDEA as a whole. Short statement that sums up IDEA as a whole. Short statement that sums up IDEA as a whole. </p>
 					</div>
 				</div>
 			</div>
@@ -49,13 +49,13 @@ get_header(); ?>
 
 		<section id="our-mission">
 			<div class="container about-idea-page">
-				<div class="row">
+				<div class="row block-margin">
 					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
-						<h2>Our Mission<h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget ante in turpis consectetur aliquet. Sed pharetra at orci a eleifend. Curabitur sollicitudin lorem at tristique consequat. Phasellus in vulputate purus, sodales placerat lorem. Nam vestibulum eros lacus, a fermentum justo ultrices nec. Nunc a odio eu odio cursus adipiscing. Nullam dolor dolor, lacinia vel odio sed, elementum sollicitudin nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla eget ligula at est gravida dapibus at ut risus. Sed libero ante, sagittis sed leo non, ornare porta odio. Duis luctus ut nulla at ultricies. Phasellus vestibulum, augue facilisis tincidunt gravida, nunc augue tristique leo, vitae ultrices urna est tristique mauris. </p>
+						<h2>OUR MISSION<h2>
+							<p>This is where a brief statement about IDEA’s mission would go. This is where a brief statement about IDEA’s mission would go. This is where a brief statement about IDEA’s mission would go. This is where a brief statement about IDEA’s mission would go. This is where a brief statement about IDEA’s mission would go. This is where a brief statement about IDEA’s mission would go.  </p>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-							<img src="http://placehold.it/600x400" class="thumbnail img-responsive">
+							<img src="<?php bloginfo('url'); ?>/wp-content/themes/idea_theme/images/photos/about-mission.jpg" class="img-responsive" />
 						</div>
 					</div>
 				</div>
@@ -64,13 +64,13 @@ get_header(); ?>
 
 		<section id="our-history" class="light-blue">
 			<div class="container about-idea-page">
-				<div class="row" style="padding: 20px;">
+				<div class="row block-margin" style="padding: 20px;">
 					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-md-push-5 col-lg-push-5">
-						<h2>Our History<h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget ante in turpis consectetur aliquet. Sed pharetra at orci a eleifend. Curabitur sollicitudin lorem at tristique consequat. Phasellus in vulputate purus, sodales placerat lorem. Nam vestibulum eros lacus, a fermentum justo ultrices nec. Nunc a odio eu odio cursus adipiscing. Nullam dolor dolor, lacinia vel odio sed, elementum sollicitudin nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla eget ligula at est gravida dapibus at ut risus. Sed libero ante, sagittis sed leo non, ornare porta odio. Duis luctus ut nulla at ultricies. Phasellus vestibulum, augue facilisis tincidunt gravida, nunc augue tristique leo, vitae ultrices urna est tristique mauris. </p>
+						<h2>OUR HISTORY<h2>
+							<p style="color:#231F20">This is where a brief summary of IDEA’s history would go. This is where a brief summary of IDEA’s history would go. This is where a brief summary of IDEA’s history would go. This is where a brief summary of IDEA’s history would go. This is where a brief summary of IDEA’s history would go. This is where a brief summary of IDEA’s history would go.  </p>
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-md-pull-7 col-lg-pull-7">
-							<img src="http://placehold.it/600x400" class="thumbnail img-responsive">
+							<img src="<?php bloginfo('url'); ?>/wp-content/themes/idea_theme/images/photos/about-history.jpg" class="img-responsive" />
 						</div>
 					</div>
 				</div>
@@ -78,31 +78,32 @@ get_header(); ?>
 
 			<section id="our-promise">
 				<div class="container about-idea-page">
-					<div class="row">
+					<div class="row block-margin">
 						<div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
-							<h2>Our Promise<h2>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget ante in turpis consectetur aliquet. Sed pharetra at orci a eleifend. Curabitur sollicitudin lorem at tristique consequat. Phasellus in vulputate purus, sodales placerat lorem. Nam vestibulum eros lacus, a fermentum justo ultrices nec. Nunc a odio eu odio cursus adipiscing. Nullam dolor dolor, lacinia vel odio sed, elementum sollicitudin nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla eget ligula at est gravida dapibus at ut risus. Sed libero ante, sagittis sed leo non, ornare porta odio. Duis luctus ut nulla at ultricies. Phasellus vestibulum, augue facilisis tincidunt gravida, nunc augue tristique leo, vitae ultrices urna est tristique mauris. </p>
+							<h2>OUR PROMISE<h2>
+								<p>This is where a brief summary of how IDEA’s mission and history (experience) create success. This is where a brief summary of how IDEA’s mission and history (experience) create success. This is where a brief summary of how IDEA’s mission and history (experience) create success. This is where a brief summary of how IDEA’s mission and history (experience) create success.</p>
 							</div>
 							<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-								<img src="http://placehold.it/600x400" class="thumbnail img-responsive">
+								<img src="<?php bloginfo('url'); ?>/wp-content/themes/idea_theme/images/photos/about-promise.jpg" class="img-responsive" />
 							</div>
 						</div>
 					</div>
 				</section>
 
 
-			<section id="about-cta" class="about-cta dark-gray-black">
+			<section id="about-cta" class="about-cta light-orange">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+						<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
 						<h2>GET INVOLVED</h2>
-						<p>Lorem ipsum dolor sit a eleifend. Curabitur sollicitudin lorem at tristique consequat. gula at est gravida dapibus at ut risus. Sed libero ante, sagittis sed leo non, ornare porta odio. Duis luctus ut nulla at ultricies. Phasellus vestibulum, augue facilisis tincidunt gravida, nunc augue tristique leo, vitae ultrices urna est tristique mauris. </p>
-						<a href="/idea/get-involved"><button class="btn btn-lg orange-btn" type="button">Get Involved Now</button></a>
+						<p>Here’s where you sell them on getting involved with IDEA. Here’s where you sell them on getting involved with IDEA. </p>
+						<a href="/idea/get-involved"><button class="btn btn-lg white-btn" type="button">GET INVOLVED NOW</button></a>
 						</div>
-						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+						<div class="col-md-2 col-lg-2">&nbsp;</div>
+						<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
 						<h2>LEARN MORE</h2>
-						<p>Lorem ipsum dolor sit a eleifend. Curabitur sollicitudin lorem at tristique consequat. gula at est gravida dapibus at ut risus. Sed libero ante, sagittis sed leo non, ornare porta odio. Duis luctus ut nulla at ultricies. Phasellus vestibulum, augue facilisis tincidunt gravida, nunc augue tristique leo, vitae ultrices urna est tristique mauris. </p>
-						<a href="/idea/resources"><button class="btn btn-lg orange-btn" type="button">Venture Resources</button></a>							
+						<p>Here’s where you sell them on venture resources. Here’s where you sell them on venture resources.  </p>
+						<a href="/idea/resources"><button class="btn btn-lg white-btn" type="button">VENTURE RESOURCES</button></a>							
 						</div>						
 				</div>
 			</section>			

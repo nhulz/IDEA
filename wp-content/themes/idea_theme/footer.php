@@ -46,7 +46,7 @@
 					<a href="linkedi .com/IDEA"><img src="http://divasmobilesolutions.com/wp-content/uploads/2012/02/fbicon-e1329880206895.png"></a>	
 				</div>
 				<div class="row footer-neu-logo">
-					<img src="http://localhost:8888/idea/wp-content/uploads/2014/Static Imagery/NEU_logo_white.png">
+		      <img src="<?php bloginfo('template_directory'); ?>/images/logos/NEU_logo_white.png">
 				</div>
 				<div class="row footer-colophon">
 					<p> 2014 IDEA | <b>idea@neu.edu</b>

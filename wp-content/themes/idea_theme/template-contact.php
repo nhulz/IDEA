@@ -127,9 +127,9 @@ Functions:
 						<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<h2 id="address-heading">IDEA'S MAILING ADDRESS</h2>
 							<p id="address">
-								IDEA Labe<br />
+								IDEA Lab<br />
 								001 Hayden Hall at Northeastern University<br />
-								370 Hungington Avenue<br />
+								370 Huntington Avenue<br />
 								Boston, MA 02116
 							</p>
 							<p id="address-instructions">If you plan on visiting the IDEA lab, please park in the Renaissance Parking Garage located on Columbus Avenue. For public transportation, take the orange line to Ruggles Station.</p>
